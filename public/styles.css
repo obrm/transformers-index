@@ -1,0 +1,197 @@
+.active{
+    color:#CACACA!important;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url('https://picfiles.alphacoders.com/857/thumb-1920-85752.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #d1cece!important;
+  }
+  
+  footer {
+    color:   #b9b7b7; 
+    text-align: center; 
+    width: 100%; 
+    height: 50px;
+    background-color: black;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .cardBody{
+    background-color: #2e444b;
+    color: #CACACA;
+  }
+  
+  .card-button {
+    background-color: black!important;
+    width: 180px;
+    color: #CACACA!important;
+  }
+  
+  .card-button:hover, .card-button:focus {
+    background-color:#437F84!important;
+    border: 1px solid #437F84!important;
+    color: #dbd6d6!important;
+  }
+  
+  .card-main{
+    color: black; 
+    width: 14rem;
+  }
+  
+  .card-image {
+    width: 14rem;
+    height: 11rem;
+  }
+  
+  nav {
+    background-color: #486972;
+    color: #CACACA;
+  }
+  
+  .nav-title {
+    color: #CACACA!important;
+  }
+
+
+  /* html css */
+
+  .entry-container {
+    background-color: #13262ced;    
+    color: #d1cece!important;
+    padding: 50px;
+  }
+
+  .entry-h1, .entry-h2 {
+    padding: 50px 50px 0;
+  }
+
+  .entry-h3 {
+    padding: 0 100px 0;
+  }
+
+  .entry-h3-2 {
+    padding: 0 47px 20px;
+  }
+
+.paragraph {
+  padding: 0 47px 0;
+}
+
+.main-image {
+  padding-left: 105px;
+  width: 1020px
+}
+
+.logo-img {
+  height: 40px;  
+}
+
+hr {
+    border-style: solid none none;
+    border-color: #335C62;
+    border-width: 3px;
+    width: 100%;
+}
+
+.delete-button:hover, .delete-button:focus {
+  background-color:#437F84!important;
+  border: 1px solid #437F84!important;
+  color: #dbd6d6!important;
+}
+
+.card-header-background {
+  background-color: #437F84;  
+}
+
+.card-header-background:hover {
+  background-color: #6c979b;  
+}
+
+.link-hover:hover {
+  color: #1e3646
+}
+
+.link-hover:focus {
+  color:#302529
+}
+
+.card-body-background {
+  background-color: #08131636;    
+    color: #302529!important
+}
+
+.vl {
+  border-left: 3px solid #335C62;;
+  height: 100px;
+  margin-left: -30px;
+  margin-right: 30px;
+}
+
+.no-border {
+  border: 0;
+
+}
+
+.bg-muted {
+  background-color: #13262cef; 
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.input-border {
+  border:solid 1px #12242A;
+}
+
+.tag-button {
+  background-color: black!important;
+  width: 110px;
+  color: #CACACA!important;
+}
+
+.tag-button:hover, .tag-button:focus {
+  background-color:#437F84!important;
+  border: 1px solid #437F84!important;
+  color: #dbd6d6!important;
+}
+
+.card-bottom-border {
+  border-bottom:solid 4px #122329;
+}
+
+.card-borders {
+  border-top:solid 4px #122329;
+  border-left:solid 4px #122329;
+  border-right:solid 4px #122329;
+}
+
+.save-entry-button {
+  background-color:#58a6ad; 
+  width: 185px;
+  height: 45px; 
+  font-weight: 700;
+  color: #122329;
+  border:solid 1px #1d323a;
+}
+
+.save-entry-button:hover {
+  background-color:#b1dadf; 
+  font-weight: 900;  
+}

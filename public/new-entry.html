@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>New Entry</title>
+
+</head>
+
+<body>
+
+    <!-- Navbar start-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a class="navbar-brand mr-4 nav-title" href=".././index.html">
+                <img src="https://www.transparentpng.com/thumb/transformers-logo/K9EvWR-black-transformers-logo-transparent.png"
+                    width=40 height=40 class="d-inline-block align-middle mr-3" alt="Autobot Logo" loading="lazy" />
+                Transformers Index
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#!/collapsibleNavbar">
+                <span class="navbar-toggler-icon">
+            </button>
+            <div class="collapse navbar-collapse row" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href=".././index.html">
+                            All Entries
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href=".././profile.html">
+                            My Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=".././new-entry.html">
+                            New Entry
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/">
+                            My Entries
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <span class="navbar-text active">
+                <a class="nav-link active" href="#!/">
+                    Sign out
+                </a>
+            </span>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Body start -->
+
+    <div class="container entry-container mt-4">
+        <form class="p-3">
+            <!-- row 1 -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="entryName">Entry Name</label>
+                    <input type="input" class="form-control" name="entryName" id="entryName" placeholder="Entry Name">
+                </div>
+                <div class="form-group col-md-3 ml-5">
+                    <label>Who can view this entry?</label>
+                    <div class="form-group">
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" value="true">Everyone
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" checked="checked" value="false">Only Me
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-2">
+                    <div class="form-group">
+                        <label for="entryImgUpload">Main Picture</label>
+                        <input type="file" image-with-preview="" class="form-control-file" id="entryImgUpload"
+                            accept="image/*">
+                    </div>
+                </div>
+            </div>
+
+            <!-- row 2 -->
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="altModeType1">Alt Mode Type (* required)</label>
+                    <input type="input" class="form-control" name="altModeType1" id="altModeType1"
+                        placeholder="Alt Mode Type">
+                    <small id="passwordHelp" class="form-text text-muted">All other alt modes are optional.</small>
+                </div>
+                <div class="form-group col-md-3 ml-2">
+                    <label for="altMode1">Alt Mode Image (* required)</label>
+                    <input type="file" image-with-preview="" class="form-control-file" id="altMode1" accept="image/*">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="altModeType2">2nd Alt Mode Type</label>
+                    <input type="input" class="form-control" name="altModeType2" id="altModeType2"
+                        placeholder="2nd Alt Mode Type">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="altMode2">2nd Alt Mode Image</label>
+                    <input type="file" image-with-preview="" class="form-control-file" id="altMode2" accept="image/*">
+                </div>
+            </div>
+            <!-- row 3 accordion -->
+            <div class="accordion" id="accordionAddAlt">
+                <div class="card no-border">
+                    <div class="card-header card-header-background" id="headingAddAlt">
+                        <h2>
+                            <button class="btn link-hover" type="button" data-toggle="collapse"
+                                data-target="#collapseAddAlt" aria-expanded="true" aria-controls="collapseAddAlt">
+                                <b>
+                                    Add More Alt Modes
+                                </b>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseAddAlt" class="collapse hide" aria-labelledby="headingAddAlt"
+                        data-parent="#accordionAddAlt">
+                        <div class="card-body card-body-background">
+                            <div class="form-row">
+                                <div class="form-group col-md-3">
+                                    <label for="altModeType3">3rd Alt Mode Type</label>
+                                    <input type="input" class="form-control input-border" name="altModeType3"
+                                        id="altModeType3" placeholder="3rd Alt Mode Type">
+                                </div>
+                                <div class="form-group col-md-3 ml-2">
+                                    <label for="altMode3">3rd Alt Mode Image</label>
+                                    <input type="file" image-with-preview="" class="form-control-file" id="altMode3"
+                                        accept="image/*">
+                                </div>
+                                <div class="vl"></div>
+                                <div class="form-group col-md-3">
+                                    <label for="altModeType4">4th Alt Mode Type</label>
+                                    <input type="input" class="form-control input-border" name="altModeType4"
+                                        id="altModeType4" placeholder="4th Alt Mode Type">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="altMode4">4th Alt Mode Image</label>
+                                    <input type="file" image-with-preview="" class="form-control-file" id="altMode4"
+                                        accept="image/*">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-row">
+                                <div class="form-group col-md-3">
+                                    <label for="altModeType5">5th Alt Mode Type</label>
+                                    <input type="input" class="form-control input-border" name="altModeType5"
+                                        id="altModeType5" placeholder="5th Alt Mode Type">
+                                </div>
+                                <div class="form-group col-md-3 ml-2">
+                                    <label for="altMode5">5th Alt Mode Image</label>
+                                    <input type="file" image-with-preview="" class="form-control-file" id="altMode5"
+                                        accept="image/*">
+                                </div>
+                                <div class="vl"></div>
+                                <div class="form-group col-md-3">
+                                    <label for="altModeType6">6th Alt Mode Type</label>
+                                    <input type="input" class="form-control input-border" name="altModeType6"
+                                        id="altModeType6" placeholder="6th Alt Mode Type">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="altMode6">6th Alt Mode Image</label>
+                                    <input type="file" image-with-preview="" class="form-control-file" id="altMode6"
+                                        accept="image/*">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row 4 -->
+            <div class="form-row mt-4">
+                <div class="form-group col">
+                    <label>Affiliation</label>
+                    <div class="form-group">
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" value="true">Autobot
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" value="true">Decepticon
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- row 5 -->
+
+            <div class="accordion" id="accordionExample">
+                <div class="card card-borders">
+                    <div class="card-header card-header-background card-bottom-border" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn link-hover btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <b>
+                                    Description and tags
+                                </b>
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body card-body-background">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1" class="font-weight-bold">Description</label>
+                                <textarea class="form-control input-border" id="exampleFormControlTextarea1"
+                                    rows="3"></textarea>
+                            </div>
+                            <label>Tags</label>
+                            <checkbox-list>
+                                <div class="form-check">
+                                    <div class="form-row container">
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <input class="form-check-input" type="checkbox" value="" id="tag0">
+                                            <label class="form-check-label" for="tag0">autobot
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <input class="form-check-input" type="checkbox" value="" id="tag1">
+                                            <label class="form-check-label" for="tag1">decepticon
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <input class="form-check-input" type="checkbox" value="" id="tag2">
+                                            <label class="form-check-label" for="tag2">truck
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <input class="form-check-input" type="checkbox" value="" id="tag3">
+                                            <label class="form-check-label" for="tag3">camero
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <input class="form-check-input" type="checkbox" value="" id="tag4">
+                                            <label class="form-check-label" for="tag4">van
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <input class="form-check-input" type="checkbox" value="" id="tag5">
+                                            <label class="form-check-label" for="tag5">Triple Changer
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <input class="form-check-input" type="checkbox" value="" id="tag6">
+                                            <label class="form-check-label" for="tag6">Transformers movies
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-6">
+                                            <input class="form-check-input" type="checkbox" value="" id="tag7">
+                                            <label class="form-check-label" for="tag7">G1
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </checkbox-list>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-borders" style="border-bottom:solid 4px #122329;">
+                    <div class="card-header card-header-background card-bottom-border" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn link-hover btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                <b>
+                                    Add custom tags
+                                </b>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body card-body-background">
+                            <div class="form-row" id="instructionForm">
+                                <div class="form-group-mb-0 col-md-6">
+                                    <label for="seq"><b>Tag Name</b></label>
+                                    <input type="input" class="form-control input-border" id="seq" ng-model="seq"
+                                        placeholder="">
+                                </div>
+
+                                <div class="form-group-mb-0 col-lg-2 col-md-6">
+                                    <label>&nbsp;</label>
+                                    <br>
+                                    <input class="btn btn-dark mx-auto tag-button" type="button" value="Add Tag">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <!-- row 6 -->
+            <div class="form-row mt-5 mb-n3" ng-show="true">
+                
+                <div class="mx-auto">
+                    <input class="btn save-entry-button" type="button" value="Seve Entry">
+                </div>
+            </div>
+    </div>
+    </form>
+    </div>
+
+    <!-- footer -->
+    <footer style="padding-top: 10px;" className="center">
+        <!-- change the year to {year}!!! -->
+        <p>Created by Ori Baram ⓒ 2020</p>
+    </footer>
+    <!-- Body end -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,3 +1,7 @@
+.active{
+  color:#CACACA!important;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://picfiles.alphacoders.com/857/thumb-1920-85752.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #d1cece!important;
+}
+
+footer {
+  color:   #b9b7b7; 
+  text-align: center; 
+  width: 100%; 
+  height: 50px;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.cardBody{
+  background-color: #2e444b;
+  color: #CACACA;
+}
+
+.card-button {
+  background-color: black!important;
+  width: 180px;
+  color: #CACACA!important;
+}
+
+.card-button:hover, .card-button:focus {
+  background-color:#437F84!important;
+  border: 1px solid #437F84!important;
+  color: #dbd6d6!important;
+}
+
+.card-main{
+  color: black; 
+  width: 14rem;
+}
+
+.card-image {
+  width: 14rem;
+  height: 11rem;
+}
+
+nav {
+  background-color: #486972;
+  color: #CACACA;
+}
+
+.nav-title {
+  color: #CACACA!important;
 }
