@@ -1,107 +1,39 @@
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 
 import Navbar from "./components/Navbar";
-import CardsGroup from "./components/CardsGroup";
 import Footer from "./components/Footer";
-
-import data from "./data/data";
+import MainPage from "./components/MainPage";
+import Profile from "./components/Profile";
+import NewEntry from "./components/NewEntry";
+import Login from "./components/Login";
+import Entry from "./components/Entry";
 
 function App() {
 
-  const [cards] = useState(data);
-
-  return (
-    <>
+  return (    
+    <BrowserRouter>
       <Navbar />
-      <div className="container">
-        <div className="ml-1 row mt-4">
-          <h1>My Entries</h1>
-        </div>
-        <div className="row mt-1">
-          <div className="col-md-3 ml-2">
-            <h3>Show Entries</h3>
-          </div>
-          <div className="col-md-3 mt-2">
-            <span>
-              <input
-                className="form-check-input"
-                type="radio"
-                name="exampleRadios"
-                id="exampleRadios1"
-                defaultValue="option1"
-                defaultChecked
-              />
-              <label className="form-check-label" htmlFor="exampleRadios1">
-                Most Popular
-              </label>
-            </span>
-            <span className="ml-5">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="exampleRadios"
-                id="exampleRadios1"
-                defaultValue="option1"
-                defaultChecked
-              />
-              <label className="form-check-label" htmlFor="exampleRadios1">
-                New
-              </label>
-            </span>
-          </div>
-        </div>
-        <div className="row mt-1">
-          <div className="col-md-6 ml-1">
-            <input
-              className="form-control"
-              type="text"
-              placeholder="Search a Transformer"
-            />
-          </div>
-        </div>
-        <div className="row mt-3">
-          <div className="col-md-6 ml-1">
-            <input
-              className="form-control"
-              type="text"
-              placeholder="Search By Keyword"
-            />
-          </div>
-          <div className="col-md-4 ml-3 mt-2">
-            <span>
-              <input
-                className="form-check-input"
-                type="radio"
-                name="exampleRadios"
-                id="exampleRadios1"
-                defaultValue="option1"
-                defaultChecked
-              />
-              <label className="form-check-label" htmlFor="exampleRadios1">
-                All keywords
-              </label>
-            </span>
-            <span className="ml-5">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="exampleRadios"
-                id="exampleRadios1"
-                defaultValue="option1"
-                defaultChecked
-              />
-              <label className="form-check-label" htmlFor="exampleRadios1">
-                At least one keyword
-              </label>
-            </span>
-          </div>
-        </div>
-        <div className="row mt-5">
-          <CardsGroup cards={cards}/>
-        </div>
-      </div>
+      <Switch>
+        <Route path="/profile">
+          <Profile />
+        </Route>
+        <Route path="/new-entry">
+          <NewEntry />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>        
+        <Route path="/entry/:id">
+          <Entry />
+        </Route>
+        <Route path="/">
+          <MainPage />
+        </Route>
+      </Switch>
       <Footer />
-    </>
+    </BrowserRouter>   
   );
 }
 
