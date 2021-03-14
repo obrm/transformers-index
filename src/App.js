@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import MainPage from "./components/MainPage";
 import Profile from "./components/Profile";
 import NewEntry from "./components/NewEntry";
-import Login from "./components/Login";
 import Entry from "./components/Entry";
 
 function App() {
@@ -21,10 +20,7 @@ function App() {
         </Route>
         <Route path="/new-entry">
           <NewEntry />
-        </Route>
-        <Route path="/login">
-          <Login />
-        </Route>        
+        </Route>           
         <Route path="/entry/:id">
           <Entry />
         </Route>
