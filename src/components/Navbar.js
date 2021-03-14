@@ -36,12 +36,7 @@ const Navbar = () => {
               <Link className="nav-link" to="/new-entry">
                 New Entry
               </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
-                My Entries
-              </Link>
-            </li>
+            </li>           
           </ul>
         </div>
       </div>     
