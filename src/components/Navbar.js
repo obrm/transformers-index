@@ -49,12 +49,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
-        <span className="navbar-text active navbar-mr">
-          <Link className="active" to="/login">
-            Sign in
-          </Link>
-        </span>
+      </div>     
     </nav>
   );
 };
